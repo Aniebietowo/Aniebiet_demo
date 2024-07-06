@@ -1,0 +1,277 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPd9Y5LlTEsk4BraEyuzYQ/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Aniebietowo/Aniebiet_demo/blob/main/Numpy%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "DO11_-3ccxvL"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "NumpyTutorial"
+      ],
+      "metadata": {
+        "id": "Ch1fSyDJc1Ch"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr = np.array([1, 2, 3, 4, 5])\n",
+        "print(arr)\n",
+        "print(type(arr))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "syGP8e7MdCf8",
+        "outputId": "acd05dd8-960e-482d-f360-3a2ea2bd4b9f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5]\n",
+            "<class 'numpy.ndarray'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr = np.array((\"Aniebiet\", 2, \"Omodot\"))\n",
+        "print(arr)\n",
+        "print(arr.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KHSe1e6vdrhq",
+        "outputId": "b7b99a7b-cc64-4e01-9951-c7a80ccd79d2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Aniebiet' '2' 'Omodot']\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr = np.array([[\"Inibehe\", \"ekpes\", \"aniebiet\"]])\n",
+        "print(arr)\n",
+        "print(arr.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4m6I9xILm-MK",
+        "outputId": "bd961b36-6249-4245-a0e9-7ec8bd80f7b4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[['Inibehe' 'ekpes' 'aniebiet']]\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "SLICING IN NUMPY (THE FORMULA [start:stop:step])\n",
+        "\n",
+        "```\n",
+        "# This is formatted as code\n",
+        "```\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "HlxmiSP-oYkE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "array1 = np.array([1, 2, 3, 4, 5, 6, 7])\n",
+        "\n",
+        "# slice array1 from index 2 to index 6\n",
+        "print(array1[2:6])\n",
+        "\n",
+        "# slice array1 from index 0 to index 6\n",
+        "print(array1[0:6])\n",
+        "\n",
+        "# slice array1 from 0 to index 3\n",
+        "print(array1[:3])\n",
+        "\n",
+        "# slice array1 from index 4 to the last element\n",
+        "print(array1[4:])\n",
+        "\n",
+        "# items from start to end\n",
+        "print(array1)\n",
+        "print(array1[:])\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pYAsiwtooxWv",
+        "outputId": "da0f3ba6-2644-4909-975d-47e451ff354f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3 4 5 6]\n",
+            "[1 2 3 4 5 6]\n",
+            "[1 2 3]\n",
+            "[5 6 7]\n",
+            "[1 2 3 4 5 6 7]\n",
+            "[1 2 3 4 5 6 7]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "ckD30KRsyJsO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "MODIFYING OF ARRAY ELEMENTS USING THE SLICING METHOD"
+      ],
+      "metadata": {
+        "id": "I-p6feo8wRgF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "\n",
+        "numbers = np.array([1, 2, 3, 4, 5, 6, 7, 8])\n",
+        "\n",
+        "# modify element from index 3  to the end\n",
+        "numbers[3:] = 30\n",
+        "print(numbers)\n",
+        "\n",
+        "# using the stop parameter, modify element from index 0 to index 3\n",
+        "numbers[:3] = 30\n",
+        "print(numbers)\n",
+        "\n",
+        "numbers[4:] = 30\n",
+        "print(numbers)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4Tn3AiXgd_P2",
+        "outputId": "95554357-0289-43ba-d137-609e9dabe9ae"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 1  2  3 30 30 30 30 30]\n",
+            "[30 30 30 30 30 30 30 30]\n",
+            "[30 30 30 30 30 30 30 30]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "REVERSE NUMPY USING NEGATIVE SLICING"
+      ],
+      "metadata": {
+        "id": "5zl-cVb1rdPl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "array1 = np.array([[ 1, 3], [5,7], [9, 11 ]])\n",
+        "result1 = np.reshape(array1, -1)\n",
+        "print(\"flattened 2D array:\", result1)\n",
+        "print(result1)"
+      ],
+      "metadata": {
+        "id": "-Z7Two5Wz4hM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2a2b6f24-8424-409e-8cbe-27310ac33ac8"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "flattened 2D array: [ 1  3  5  7  9 11]\n",
+            "[ 1  3  5  7  9 11]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
